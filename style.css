@@ -1,0 +1,100 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Shared Styling */
+header {
+    background-color: #004d40;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+    color: #b2dfdb; /* Lighter shade for hover */
+}
+
+.nav-links a.active {
+    color: #b2dfdb; /* Lighter shade for the active link */
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+footer {
+    background-color: #004d40;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1rem; /* Added extra padding for spacing */
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Interactive Map */
+#interactive-map {
+    width: 100%;
+    height: calc(100vh - 200px); /* Dynamically adjust height based on viewport */
+    background-color: #e0e0e0; /* Fallback color */
+}
+
+/* Form Styling for Collaboration Page */
+form {
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form textarea {
+    width: 80%;
+    max-width: 600px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #00796b;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Added transition */
+}
+
+form button:hover {
+    background-color: #005f54; /* Darker shade for hover */
+    transform: scale(1.05); /* Slight enlargement on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
